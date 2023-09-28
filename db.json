@@ -29,17 +29,6 @@
       "text": "5 at School",
       "day": "May 6th at 1:30pm",
       "reminder": false
-    },
-    {
-      "text": "312",
-      "reminder": false,
-      "id": 6
-    },
-    {
-      "text": "321321",
-      "day": "call me babe hir is mi numer",
-      "reminder": true,
-      "id": 7
     }
   ]
 }

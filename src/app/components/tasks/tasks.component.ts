@@ -28,6 +28,6 @@ export class TasksComponent {
   }
 
   createTask(task:Task){
-    this.taskService.createTask(task).subscribe(()=>this.taskService.getTasks().subscribe((tasks) => this.tasks = tasks));
+    this.taskService.createTask(task).subscribe((task)=>this.tasks.push(task));
   }
 }
