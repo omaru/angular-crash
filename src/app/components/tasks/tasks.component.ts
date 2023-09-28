@@ -22,4 +22,12 @@ export class TasksComponent {
       this.taskService.deleteTask(task.id).subscribe(() => this.tasks = this.tasks.filter((t) => t.id !== task.id));
     }
   }
+  toggleReminder(task:Task){
+    task.reminder = !task.reminder;
+    this.taskService.updateTaskReminder(task).subscribe();
+  }
+
+  createTask(task:Task){
+    this.taskService.createTask(task).subscribe(()=>this.taskService.getTasks().subscribe((tasks) => this.tasks = tasks));
+  }
 }
